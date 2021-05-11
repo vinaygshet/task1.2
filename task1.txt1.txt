@@ -1,0 +1,30 @@
+Difference between copy by value and copy by reference
+-> value types         reference type
+*Number                *Object
+*String                *Function
+*Boolean               *Array
+*Symbol
+*undefinded
+*null
+
+Primitives are copied by their value:
+example;
+var x=10;
+var y=x;
+x=20;
+console.log(x);
+console.log(y);
+output;
+x=10
+y=20
+
+Objects are copied by their reference:
+example;
+var x={value:20};
+var y=x;
+x.value=20;
+console.log(x);
+console.log(y);
+output:
+x={value:20}
+y={value:20}
